@@ -12,9 +12,9 @@ namespace OptimizationDemo.Models
         public decimal Price { get; set; }
         public string Description { get; set; }
 
-        public IList<Ingredient> Ingredients { get; set; }
+        public virtual ICollection<Ingredient> Ingredients { get; set; }
 
-        public IList<Vendor> Vendors { get; set; }
+        public virtual ICollection<Vendor> Vendors { get; set; }
 
         public IceCream()
         {

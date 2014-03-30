@@ -7,13 +7,31 @@
 
 <div>
     <table>
-        @foreach (var row in (IEnumerable<OptimizationDemo.Models.IceCream>)Model.IceCreams)
-        {
+        <thead>
             <tr>
-                <td>
-                    @row.Name
-                </td>
+                <td>Name</td>
+                <td>Description</td>
+                <td>Ingredients</td>
             </tr>
+        </thead>
+        @foreach (var row in (System.Data.Entity.DbSet<OptimizationDemo.Models.IceCream>)Model.IceCreams)
+        {
+        <tr>
+            <td>
+                @row.Name
+            </td>
+            <td>
+                @row.Description
+            </td>
+            <td>
+                <ul>
+                    @foreach(var ingredient in row.Ingredients)
+                    {
+                    <li>@ingredient.Name</li>
+                    }
+                </ul>
+            </td>
+        </tr>
         }
     </table>
 

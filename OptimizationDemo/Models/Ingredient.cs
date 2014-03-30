@@ -13,7 +13,7 @@ namespace OptimizationDemo.Models
         public double Quanity { get; set; }
         public double CaloriesPerUnit { get; set; }
 
-        public IList<IceCream> UsedIn { get; set; }
+        public virtual ICollection<IceCream> UsedIn { get; set; }
 
 
 

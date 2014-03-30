@@ -12,7 +12,7 @@ namespace OptimizationDemo.Models
         public string PhoneNumber { get; set; }
         public string ManagerName { get; set; }
 
-        public IList<IceCream> IceCreams { get; set; }
+        public virtual ICollection<IceCream> IceCreams { get; set; }
 
         public Vendor()
         {
