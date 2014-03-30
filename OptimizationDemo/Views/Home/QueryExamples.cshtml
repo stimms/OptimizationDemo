@@ -1,0 +1,20 @@
+﻿@model dynamic
+@{
+    ViewBag.Title = "Query Examples";
+}
+<h2>@ViewBag.Title.</h2>
+<h3>@ViewBag.Message</h3>
+
+<div>
+    <table>
+        @foreach (var row in (IEnumerable<OptimizationDemo.Models.IceCream>)Model.IceCreams)
+        {
+            <tr>
+                <td>
+                    @row.Name
+                </td>
+            </tr>
+        }
+    </table>
+
+</div>
