@@ -1,0 +1,11 @@
+﻿
+@{
+    ViewBag.Title = "Partials";
+}
+
+<h2>Partials</h2>
+
+@{Html.RenderAction("Detail");}
+<hr />
+@{Html.RenderAction("List", new { runtime = 3 });}
+@{Html.RenderAction("List", new { runtime = 4 });}

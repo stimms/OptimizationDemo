@@ -1,4 +1,4 @@
-﻿@model dynamic
+﻿@model IEnumerable<OptimizationDemo.Models.IceCream>
 @{
     ViewBag.Title = "Query Examples";
 }
@@ -14,7 +14,7 @@
                 <td>Ingredients</td>
             </tr>
         </thead>
-        @foreach (var row in (IEnumerable<OptimizationDemo.Models.IceCream>)Model.IceCreams)
+        @foreach (var row in Model)
         {
         <tr>
             <td>

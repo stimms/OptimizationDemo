@@ -17,6 +17,7 @@
     <script src="~/scripts/handlebars.js"></script>
     <script src="~/scripts/mustache.js"></script>
     <script src="~/scripts/ejs.min.js"></script>
+    <scirpt src="~/bundles/scripts"></scirpt>
     <link rel="stylesheet" type="text/css" href="~/Content/bootstrap.css"/>
     <link rel="stylesheet" type="text/css" href="~/Content/css/font-awesome.css"/>
     <link rel="stylesheet" type="text/css" href="~/Content/site.css" />
@@ -38,6 +39,7 @@
                 <ul class="nav navbar-nav">
                     <li>@Html.ActionLink("Home", "Index", "Home")</li>
                     <li>@Html.ActionLink("Query Examples", "QueryExamples", "Home")</li>
+                    <li>@Html.ActionLink("Partial Examples", "Partials", "Home")</li>
                     <li>@Html.ActionLink("Create Data", "CreateData", "Home")</li>
                 </ul>
                 @Html.Partial("_LoginPartial")
